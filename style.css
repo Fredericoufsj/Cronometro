@@ -1,0 +1,89 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg);
+}
+
+html {
+    --bg: #39ED72;
+    font-size: 62.5%;
+    --pop: 'Poppins', sans-serif;
+    --sans: 'Open Sans', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+header img {
+    width: 100px;
+}
+
+header h1 {
+    font-size: 9rem;
+    font-family: var(--sans);
+    text-shadow: .2rem .2rem .4rem black;
+}
+
+main p {
+    font-size: 2.4rem;
+    text-align: center;
+    font-family: var(--pop);
+    color: #16A142;
+    text-shadow: .1rem .1rem .2rem black;
+}
+
+.container main .cronometro p {
+    font-size: 5rem;
+}
+
+main .buttons {
+    display: flex;
+    font-size: 25px;
+    width: 100%;
+    justify-content: center;
+    font-family: var(--pop);
+}
+
+main .buttons .button {
+    background-color: #A16C1F;
+    height: 5rem;
+    border-radius: .8rem;
+    cursor: pointer;
+    transition: .2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    padding: 1.3rem 1.6rem;
+    box-shadow: .2rem .2rem .4rem black;
+}
+
+main .buttons .button:nth-child(1) {
+    margin-right: .8rem;
+}
+
+main .buttons .button:nth-child(2) {
+    margin-right: .8rem;
+}
+
+main .buttons .button:hover {
+    filter: brightness(1.2);
+}
