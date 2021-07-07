@@ -28,7 +28,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    flex-direction: column;
     margin-bottom: 20px;
 }
 
@@ -42,7 +42,7 @@ header h1 {
     text-shadow: .2rem .2rem .4rem black;
 }
 
-main p {
+p {
     font-size: 2.4rem;
     text-align: center;
     font-family: var(--pop);
@@ -56,13 +56,11 @@ main p {
 
 main .buttons {
     display: flex;
-    font-size: 25px;
     width: 100%;
     justify-content: center;
-    font-family: var(--pop);
 }
 
-main .buttons .button {
+button {
     background-color: #A16C1F;
     height: 5rem;
     border-radius: .8rem;
@@ -74,16 +72,20 @@ main .buttons .button {
     line-height: 0;
     padding: 1.3rem 1.6rem;
     box-shadow: .2rem .2rem .4rem black;
+    outline: none;
+    width: 30rem;
+    font-size: 25px;
+    font-family: var(--pop);
 }
 
-main .buttons .button:nth-child(1) {
+main .buttons button:nth-child(1) {
     margin-right: .8rem;
 }
 
-main .buttons .button:nth-child(2) {
+main .buttons button:nth-child(2) {
     margin-right: .8rem;
 }
 
-main .buttons .button:hover {
+main .buttons button:hover {
     filter: brightness(1.2);
 }

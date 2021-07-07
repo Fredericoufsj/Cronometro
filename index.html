@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-</head>
+<script src="script.js"></script>
 
 <body>
     <div class="container">
@@ -20,23 +20,24 @@
 
             <h1>Cronômetro</h1>
 
+            <p>Cronômetro simples, desenvolvido para colocar em prática conhecimentos em HTML5, CSS e JavaScript.</p>
         </header>
         <main>
-            <p>Cronômetro simples, desenvolvido para colocar em prática conhecimentos em HTML5, CSS e JavaScript.</p>
             <div class="cronometro">
                 <p>
-                    <span class="hora">00</span>
-                    <span class="pontos">:</span>
-                    <span class="minuto">00</span>
+                    <span id="horas">00</span>
+                    <span id="pontos">:</span>
+                    <span id="minutos">00</span>
                 </p>
             </div>
             <div class="buttons">
-                <div class="button">Iniciar</div>
-                <div class="button">Parar</div>
-                <div class="button">Recomeçar</div>
+                <button id="iniciar">Iniciar</button>
+                <button id="parar">Parar</button>
+                <button id="recomecar">Recomeçar</button>
             </div>
         </main>
     </div>
+
 
 </body>
 
